@@ -1,5 +1,6 @@
 # scan-cli-test-projects
 
+This repo contains projects in different package managers(npm, maven, ...) to be used in testing scan-cli tool.
 
 
 ## Getting started
