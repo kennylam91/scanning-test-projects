@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{1829D41D-3710-401E-933F-360F3830A2B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Moq.AutoMocker", "Moq.AutoMocker", "{3CEAD376-5098-430E-9844-44FF9309DC2B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generators", "nuget\Moq.AutoMocker\Generators\Generators.csproj", "{051FEBA9-C84F-4709-B980-9C1D4056A69A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moq.AutoMock", "nuget\Moq.AutoMocker\Moq.AutoMock\Moq.AutoMock.csproj", "{D0DFBC45-3CB3-4746-8853-41A4573D7D32}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moq.AutoMock.Tests", "nuget\Moq.AutoMocker\Moq.AutoMock.Tests\Moq.AutoMock.Tests.csproj", "{DA393C72-5766-4828-B25C-B4FC50673867}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moq.AutoMocker.Generators", "nuget\Moq.AutoMocker\Moq.AutoMocker.Generators\Moq.AutoMocker.Generators.csproj", "{AC862829-1DC2-4812-9198-793145D0F5A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moq.AutoMocker.Generators.Tests", "nuget\Moq.AutoMocker\Moq.AutoMocker.Generators.Tests\Moq.AutoMocker.Generators.Tests.csproj", "{0F16D300-1431-426F-B409-BE800899BCCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GeneratorTests", "GeneratorTests", "{559B40E7-D98A-459C-9C7B-AFFC81FE9076}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moq.AutoMock.Generator.Example.MSTest", "nuget\Moq.AutoMocker\GeneratorTests\Moq.AutoMock.Generator.Example.MSTest\Moq.AutoMock.Generator.Example.MSTest.csproj", "{CBA9FCCC-A285-4A28-B399-21A7D1542E21}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moq.AutoMock.Generator.Example.NUnit", "nuget\Moq.AutoMocker\GeneratorTests\Moq.AutoMock.Generator.Example.NUnit\Moq.AutoMock.Generator.Example.NUnit.csproj", "{1B64302C-8AC7-49CE-8A62-2391002B3C92}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moq.AutoMock.Generator.Example.xUnit", "nuget\Moq.AutoMocker\GeneratorTests\Moq.AutoMock.Generator.Example.xUnit\Moq.AutoMock.Generator.Example.xUnit.csproj", "{9BBF4BD5-13F2-4AE5-A035-13557258CFCD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moq.AutoMock.Generator.Example", "nuget\Moq.AutoMocker\GeneratorTests\Moq.AutoMocker.Generator.Example\Moq.AutoMock.Generator.Example.csproj", "{29A1ADFC-6F75-40A3-8D7F-DEB1E5901DF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{051FEBA9-C84F-4709-B980-9C1D4056A69A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{051FEBA9-C84F-4709-B980-9C1D4056A69A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{051FEBA9-C84F-4709-B980-9C1D4056A69A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{051FEBA9-C84F-4709-B980-9C1D4056A69A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0DFBC45-3CB3-4746-8853-41A4573D7D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0DFBC45-3CB3-4746-8853-41A4573D7D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0DFBC45-3CB3-4746-8853-41A4573D7D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0DFBC45-3CB3-4746-8853-41A4573D7D32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA393C72-5766-4828-B25C-B4FC50673867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA393C72-5766-4828-B25C-B4FC50673867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA393C72-5766-4828-B25C-B4FC50673867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA393C72-5766-4828-B25C-B4FC50673867}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC862829-1DC2-4812-9198-793145D0F5A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC862829-1DC2-4812-9198-793145D0F5A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC862829-1DC2-4812-9198-793145D0F5A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC862829-1DC2-4812-9198-793145D0F5A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F16D300-1431-426F-B409-BE800899BCCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F16D300-1431-426F-B409-BE800899BCCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F16D300-1431-426F-B409-BE800899BCCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F16D300-1431-426F-B409-BE800899BCCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBA9FCCC-A285-4A28-B399-21A7D1542E21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBA9FCCC-A285-4A28-B399-21A7D1542E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBA9FCCC-A285-4A28-B399-21A7D1542E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBA9FCCC-A285-4A28-B399-21A7D1542E21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B64302C-8AC7-49CE-8A62-2391002B3C92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B64302C-8AC7-49CE-8A62-2391002B3C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B64302C-8AC7-49CE-8A62-2391002B3C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B64302C-8AC7-49CE-8A62-2391002B3C92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BBF4BD5-13F2-4AE5-A035-13557258CFCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BBF4BD5-13F2-4AE5-A035-13557258CFCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BBF4BD5-13F2-4AE5-A035-13557258CFCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BBF4BD5-13F2-4AE5-A035-13557258CFCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29A1ADFC-6F75-40A3-8D7F-DEB1E5901DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29A1ADFC-6F75-40A3-8D7F-DEB1E5901DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29A1ADFC-6F75-40A3-8D7F-DEB1E5901DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29A1ADFC-6F75-40A3-8D7F-DEB1E5901DF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3CEAD376-5098-430E-9844-44FF9309DC2B} = {1829D41D-3710-401E-933F-360F3830A2B0}
+		{051FEBA9-C84F-4709-B980-9C1D4056A69A} = {3CEAD376-5098-430E-9844-44FF9309DC2B}
+		{D0DFBC45-3CB3-4746-8853-41A4573D7D32} = {3CEAD376-5098-430E-9844-44FF9309DC2B}
+		{DA393C72-5766-4828-B25C-B4FC50673867} = {3CEAD376-5098-430E-9844-44FF9309DC2B}
+		{AC862829-1DC2-4812-9198-793145D0F5A8} = {3CEAD376-5098-430E-9844-44FF9309DC2B}
+		{0F16D300-1431-426F-B409-BE800899BCCC} = {3CEAD376-5098-430E-9844-44FF9309DC2B}
+		{559B40E7-D98A-459C-9C7B-AFFC81FE9076} = {3CEAD376-5098-430E-9844-44FF9309DC2B}
+		{CBA9FCCC-A285-4A28-B399-21A7D1542E21} = {559B40E7-D98A-459C-9C7B-AFFC81FE9076}
+		{1B64302C-8AC7-49CE-8A62-2391002B3C92} = {559B40E7-D98A-459C-9C7B-AFFC81FE9076}
+		{9BBF4BD5-13F2-4AE5-A035-13557258CFCD} = {559B40E7-D98A-459C-9C7B-AFFC81FE9076}
+		{29A1ADFC-6F75-40A3-8D7F-DEB1E5901DF4} = {559B40E7-D98A-459C-9C7B-AFFC81FE9076}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0AE48CF-90F1-4386-97EC-BBB74F5C0541}
+	EndGlobalSection
+EndGlobal

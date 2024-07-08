@@ -1,0 +1,290 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\projects\\Licensight\\cli-tools\\scan-cli-test-projects\\nuget\\Moq.AutoMocker\\GeneratorTests\\Moq.AutoMock.Generator.Example.xUnit\\Moq.AutoMock.Generator.Example.xUnit.csproj": {}
+  },
+  "projects": {
+    "D:\\projects\\Licensight\\cli-tools\\scan-cli-test-projects\\nuget\\Moq.AutoMocker\\GeneratorTests\\Moq.AutoMock.Generator.Example.xUnit\\Moq.AutoMock.Generator.Example.xUnit.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\projects\\Licensight\\cli-tools\\scan-cli-test-projects\\nuget\\Moq.AutoMocker\\GeneratorTests\\Moq.AutoMock.Generator.Example.xUnit\\Moq.AutoMock.Generator.Example.xUnit.csproj",
+        "projectName": "Moq.AutoMock.Generator.Example.xUnit",
+        "projectPath": "D:\\projects\\Licensight\\cli-tools\\scan-cli-test-projects\\nuget\\Moq.AutoMocker\\GeneratorTests\\Moq.AutoMock.Generator.Example.xUnit\\Moq.AutoMock.Generator.Example.xUnit.csproj",
+        "packagesPath": "C:\\Users\\pvlam\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\Licensight\\cli-tools\\scan-cli-test-projects\\nuget\\Moq.AutoMocker\\GeneratorTests\\Moq.AutoMock.Generator.Example.xUnit\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "D:\\projects\\Licensight\\cli-tools\\scan-cli-test-projects\\nuget\\Moq.AutoMocker\\NuGet.Config",
+          "C:\\Users\\pvlam\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\projects\\Licensight\\cli-tools\\scan-cli-test-projects\\nuget\\Moq.AutoMocker\\GeneratorTests\\Moq.AutoMocker.Generator.Example\\Moq.AutoMock.Generator.Example.csproj": {
+                "projectPath": "D:\\projects\\Licensight\\cli-tools\\scan-cli-test-projects\\nuget\\Moq.AutoMocker\\GeneratorTests\\Moq.AutoMocker.Generator.Example\\Moq.AutoMock.Generator.Example.csproj"
+              },
+              "D:\\projects\\Licensight\\cli-tools\\scan-cli-test-projects\\nuget\\Moq.AutoMocker\\Moq.AutoMock\\Moq.AutoMock.csproj": {
+                "projectPath": "D:\\projects\\Licensight\\cli-tools\\scan-cli-test-projects\\nuget\\Moq.AutoMocker\\Moq.AutoMock\\Moq.AutoMock.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.10.0, )",
+              "versionCentrallyManaged": true
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.2, )",
+              "versionCentrallyManaged": true
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.8.1, )",
+              "versionCentrallyManaged": true
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.8.1, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "coverlet.collector": "[6.0.2, )",
+            "Microsoft.CodeAnalysis": "[4.10.0, )",
+            "Microsoft.CodeAnalysis.CSharp": "[4.10.0, )",
+            "Microsoft.CodeAnalysis.CSharp.SourceGenerators.Testing.MSTest": "[1.1.1, )",
+            "Microsoft.Extensions.Options": "[8.0.2, )",
+            "Microsoft.NET.Test.Sdk": "[17.10.0, )",
+            "Microsoft.SourceLink.GitHub": "[8.0.0, )",
+            "Moq": "[4.20.70, )",
+            "MSTest.TestAdapter": "[3.4.3, )",
+            "MSTest.TestFramework": "[3.4.3, )",
+            "NonBlocking": "[2.1.2, )",
+            "NUnit": "[4.1.0, )",
+            "NUnit3TestAdapter": "[4.5.0, )",
+            "xunit": "[2.8.1, )",
+            "xunit.runner.visualstudio": "[2.8.1, )"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\projects\\Licensight\\cli-tools\\scan-cli-test-projects\\nuget\\Moq.AutoMocker\\GeneratorTests\\Moq.AutoMocker.Generator.Example\\Moq.AutoMock.Generator.Example.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\projects\\Licensight\\cli-tools\\scan-cli-test-projects\\nuget\\Moq.AutoMocker\\GeneratorTests\\Moq.AutoMocker.Generator.Example\\Moq.AutoMock.Generator.Example.csproj",
+        "projectName": "Moq.AutoMock.Generator.Example",
+        "projectPath": "D:\\projects\\Licensight\\cli-tools\\scan-cli-test-projects\\nuget\\Moq.AutoMocker\\GeneratorTests\\Moq.AutoMocker.Generator.Example\\Moq.AutoMock.Generator.Example.csproj",
+        "packagesPath": "C:\\Users\\pvlam\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\Licensight\\cli-tools\\scan-cli-test-projects\\nuget\\Moq.AutoMocker\\GeneratorTests\\Moq.AutoMocker.Generator.Example\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "D:\\projects\\Licensight\\cli-tools\\scan-cli-test-projects\\nuget\\Moq.AutoMocker\\NuGet.Config",
+          "C:\\Users\\pvlam\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[8.0.2, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "coverlet.collector": "[6.0.2, )",
+            "Microsoft.CodeAnalysis": "[4.10.0, )",
+            "Microsoft.CodeAnalysis.CSharp": "[4.10.0, )",
+            "Microsoft.CodeAnalysis.CSharp.SourceGenerators.Testing.MSTest": "[1.1.1, )",
+            "Microsoft.Extensions.Options": "[8.0.2, )",
+            "Microsoft.NET.Test.Sdk": "[17.10.0, )",
+            "Microsoft.SourceLink.GitHub": "[8.0.0, )",
+            "Moq": "[4.20.70, )",
+            "MSTest.TestAdapter": "[3.4.3, )",
+            "MSTest.TestFramework": "[3.4.3, )",
+            "NonBlocking": "[2.1.2, )",
+            "NUnit": "[4.1.0, )",
+            "NUnit3TestAdapter": "[4.5.0, )",
+            "xunit": "[2.8.1, )",
+            "xunit.runner.visualstudio": "[2.8.1, )"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\projects\\Licensight\\cli-tools\\scan-cli-test-projects\\nuget\\Moq.AutoMocker\\Moq.AutoMock\\Moq.AutoMock.csproj": {
+      "version": "3.6.0",
+      "restore": {
+        "projectUniqueName": "D:\\projects\\Licensight\\cli-tools\\scan-cli-test-projects\\nuget\\Moq.AutoMocker\\Moq.AutoMock\\Moq.AutoMock.csproj",
+        "projectName": "Moq.AutoMock",
+        "projectPath": "D:\\projects\\Licensight\\cli-tools\\scan-cli-test-projects\\nuget\\Moq.AutoMocker\\Moq.AutoMock\\Moq.AutoMock.csproj",
+        "packagesPath": "C:\\Users\\pvlam\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\Licensight\\cli-tools\\scan-cli-test-projects\\nuget\\Moq.AutoMocker\\Moq.AutoMock\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "D:\\projects\\Licensight\\cli-tools\\scan-cli-test-projects\\nuget\\Moq.AutoMocker\\NuGet.Config",
+          "C:\\Users\\pvlam\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )",
+              "versionCentrallyManaged": true
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "NonBlocking": {
+              "target": "Package",
+              "version": "[2.1.2, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "coverlet.collector": "[6.0.2, )",
+            "Microsoft.CodeAnalysis": "[4.10.0, )",
+            "Microsoft.CodeAnalysis.CSharp": "[4.10.0, )",
+            "Microsoft.CodeAnalysis.CSharp.SourceGenerators.Testing.MSTest": "[1.1.1, )",
+            "Microsoft.Extensions.Options": "[8.0.2, )",
+            "Microsoft.NET.Test.Sdk": "[17.10.0, )",
+            "Microsoft.SourceLink.GitHub": "[8.0.0, )",
+            "Moq": "[4.20.70, )",
+            "MSTest.TestAdapter": "[3.4.3, )",
+            "MSTest.TestFramework": "[3.4.3, )",
+            "NonBlocking": "[2.1.2, )",
+            "NUnit": "[4.1.0, )",
+            "NUnit3TestAdapter": "[4.5.0, )",
+            "xunit": "[2.8.1, )",
+            "xunit.runner.visualstudio": "[2.8.1, )"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

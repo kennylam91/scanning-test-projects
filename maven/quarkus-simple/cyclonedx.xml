@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bom xmlns="http://cyclonedx.org/schema/bom/1.3" version="1" serialNumber="urn:uuid:5be78989-8b57-4a15-ba84-b04c6392f178">
+  <metadata>
+    <timestamp>2024-05-15T06:12:06Z</timestamp>
+    <tools>
+      <tool>
+        <vendor>AboutCode.org</vendor>
+        <name>scancode-toolkit</name>
+        <version>32.1.0</version>
+      </tool>
+    </tools>
+  </metadata>
+  <components/>
+</bom>

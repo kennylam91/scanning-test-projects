@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <OutputType>Library</OutputType>
+    <Copyright>Copyright © $([System.DateTime]::UtcNow.ToString("yyyy"))</Copyright>
+    <NeutralLanguage>en-US</NeutralLanguage>
+
+    <VersionPrefix Condition=" '$(VersionPrefix)' == '' ">3.6.0</VersionPrefix>
+
+    <Authors>Tim Kellogg, Adam Hewitt, Kevin Bost</Authors>
+    <PackageDescription>An auto-mocking container that generates mocks using Moq</PackageDescription>
+    <Copyright>Copyright Tim Kellogg $([System.DateTime]::UtcNow.ToString("yyyy"))</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/moq/Moq.AutoMocker</PackageProjectUrl>
+    <Tags>moq;automocking;testing;TDD</Tags>
+
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <PackageIcon>NuGetIcon.png</PackageIcon>
+    <NoWarn>$(NoWarn);AMG0002</NoWarn>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Moq" />
+    <PackageReference Include="NonBlocking" />
+    <ProjectReference Include="../Generators/Generators.csproj">
+      <OutputItemType>Analyzer</OutputItemType>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Moq.AutoMocker.Generators\Moq.AutoMocker.Generators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\assets\NuGetIcon.png" Pack="true" PackagePath="\" />
+    <None Include="..\LICENSE" Pack="true" PackagePath="" />
+    <Compile Include="..\System.Diagnostics.CodeAnalysis.cs" />
+    <None Include="..\Moq.AutoMocker.Generators\bin\$(Configuration)\netstandard2.0\*.dll" Pack="True" PackagePath="analyzers\dotnet\cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="..\Moq.AutoMocker.Generators\bin\Debug\netstandard2.0\Moq.AutoMocker.Generators.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <StronglyTypedNamespace>$(AssemblyName).Resources</StronglyTypedNamespace>
+      <StronglyTypedClassName>Strings</StronglyTypedClassName>
+      <StronglyTypedFileName>$(IntermediateOutputPath)\Strings.Designer.cs</StronglyTypedFileName>
+      <StronglyTypedLanguage>CSharp</StronglyTypedLanguage>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

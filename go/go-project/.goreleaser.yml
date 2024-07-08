@@ -1,0 +1,110 @@
+env:
+  - GO111MODULE=on
+  - GOPROXY=https://goproxy.io,direct
+
+before:
+  hooks:
+    - go mod download
+
+builds:
+  - env:
+      - CGO_ENABLED=0
+    goos:
+      - darwin
+      - linux
+      - windows
+    goarch:
+      - 386
+      - amd64
+      - arm
+      - arm64
+    ignore:
+      - goos: darwin
+        goarch: 386
+    ldflags:
+      - -w -X github.com/zackijack/{{ .ProjectName }}/internal/version.Version={{ .Version }} -X github.com/zackijack/{{ .ProjectName }}/internal/version.GitCommit={{ .FullCommit }} -X github.com/zackijack/{{ .ProjectName }}/internal/version.BuildDate={{ .Date }}
+
+archives:
+  - name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}"
+    replacements:
+      darwin: Darwin
+      linux: Linux
+      windows: Windows
+      386: i386
+      amd64: x86_64
+    format_overrides:
+      - goos: windows
+        format: zip
+
+checksum:
+  name_template: "{{ .ProjectName }}_checksums.txt"
+
+snapshot:
+  name_template: "{{ .Tag }}-{{.ShortCommit}}"
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^docs"
+      - "^chore"
+      - "^style"
+      - "^refactor"
+      - "^test"
+      - Merge pull request
+      - Merge branch
+      - go mod tidy
+
+brews:
+  - tap:
+      owner: zackijack
+      name: homebrew-tap
+    folder: Formula
+    homepage: https://github.com/zackijack/{{ .ProjectName }}
+    description: Go project template
+    install: |
+      bin.install "{{ .ProjectName }}"
+
+      output = Utils.safe_popen_read({ "SHELL" => "bash" }, bin/"{{ .ProjectName }}", "completion", "bash")
+      (bash_completion/"{{ .ProjectName }}").write output
+
+      output = Utils.safe_popen_read({ "SHELL" => "zsh" }, bin/"{{ .ProjectName }}", "completion", "zsh")
+      (zsh_completion/"_{{ .ProjectName }}").write output
+    test: |
+      system "#{bin}/{{ .ProjectName }} version"
+
+scoop:
+  bucket:
+    owner: zackijack
+    name: scoop-bucket
+  homepage: https://github.com/zackijack/{{ .ProjectName }}
+  description: Go project template
+
+nfpms:
+  - file_name_template: "{{ .ProjectName }}_{{ .Arch }}"
+    homepage: https://github.com/zackijack/{{ .ProjectName }}
+    description: Go project template
+    formats:
+      - deb
+      - rpm
+
+dockers:
+  - image_templates:
+      - "zackijack/{{ .ProjectName }}:{{ .Tag }}"
+      - "zackijack/{{ .ProjectName }}:v{{ .Major }}.{{ .Minor }}"
+      - "zackijack/{{ .ProjectName }}:v{{ .Major }}"
+      - "zackijack/{{ .ProjectName }}:latest"
+    dockerfile: Dockerfile
+    use_buildx: true
+    build_flag_templates:
+      - "--pull"
+      - "--label=org.opencontainers.image.created={{ .Date }}"
+      - "--label=org.opencontainers.image.title={{ .ProjectName }}"
+      - "--label=org.opencontainers.image.title={{ .ProjectName }}"
+      - "--label=org.opencontainers.image.revision={{ .FullCommit }}"
+      - "--label=org.opencontainers.image.description={{ .ProjectName }}"
+      - "--label=org.opencontainers.image.url=https://github.com/zackijack/{{ .ProjectName }}"
+      - "--label=org.opencontainers.image.source=https://github.com/zackijack/{{ .ProjectName }}"
+      - "--label=org.opencontainers.image.version={{ .Version }}"
+      - "--cache-from=type=local,src=/tmp/.buildx-cache"
+      - "--cache-to=type=local,dest=/tmp/.buildx-cache"

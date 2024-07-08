@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "SiMWh2B1ysP5PYjZsXaUn/PBYVU32O7rXm6o3O+8iimKY1aVOamOrWcljSPVGmxm+St81CrtbrgpmXEgAIJKpA==",
+  "success": true,
+  "projectFilePath": "D:\\projects\\Licensight\\cli-tools\\scan-cli-test-projects\\nuget\\Moq.AutoMocker\\GeneratorTests\\Moq.AutoMocker.Generator.Example\\Moq.AutoMock.Generator.Example.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pvlam\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\pvlam\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "C:\\Users\\pvlam\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

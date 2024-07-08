@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = Moq.AutoMock
+build_property.ProjectDir = D:\projects\Licensight\cli-tools\scan-cli-test-projects\nuget\Moq.AutoMocker\Moq.AutoMock\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
